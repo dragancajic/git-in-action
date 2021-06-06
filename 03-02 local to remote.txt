@@ -1,0 +1,23 @@
+2:16 PM April 27, 2021
+
+
+# Connect local repo to remote
+
+> git init
+> git remote -v
+
+# add a new remote repository explicitly
+> git remote add origin https://github.com/dragancajic/HealthyMe.git
+
+# Pushing commits to a remote repository
+# git push <REMOTENAME> <BRANCHNAME>
+> git push origin master
+
+~ - ~ - ~ - ~ - ~ p r o b l e m s   s o l v e d !!!
+
+> npm install jquery bootstrap
+> npm install @fortawesome/fontawesome-free
+
+# FINALLY!
+
+√ Compiled successfully.

@@ -1,0 +1,51 @@
+10:33 PM June 6, 2021
+
+
+# Fix typo in Git commit message
+# ~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-
+
+> git log
+commit 52eb122299743155154df4bd4afde62d6235eb32 (HEAD -> master)
+Author: Dragan Cajic <cajic_dragan@yahoo.com>
+Date:   Fri May 14 14:58:26 2021 +0200
+
+    initial commit (jsf 2.2, beans.xml, .gitingore)
+
+
+# fix typo in your commit message (.gitingore -> .gitignore) √
+
+# git commit --amend -m "introduce your change in message" // <--- WORKS!
+> git commit --amend -m "initial commit (jsf 2.2, beans.xml, .gitignore)"
+
+
+# see just last commit
+
+> git log -1
+commit 7dd867fde87f88a1cc64668a0647f6366e83c032 (HEAD -> master)
+Author: Dragan Cajic <cajic_dragan@yahoo.com>
+Date:   Fri May 14 14:58:26 2021 +0200
+
+    initial commit (jsf 2.2, beans.xml, .gitignore)
+
+
+# another commit
+
+> git commit -m "add maven-surefire-plugin in pom file"
+
+
+# list all commit history
+
+> git log
+commit 2fcfe6104cebfdc48f0be3a107288ebc4a03f6b0 (HEAD -> master, origin/master)
+Author: Dragan Cajic <cajic_dragan@yahoo.com>
+Date:   Sun Jun 6 22:10:16 2021 +0200
+
+    add maven-surefire-plugin in pom file
+
+commit 7dd867fde87f88a1cc64668a0647f6366e83c032
+Author: Dragan Cajic <cajic_dragan@yahoo.com>
+Date:   Fri May 14 14:58:26 2021 +0200
+
+    initial commit (jsf 2.2, beans.xml, .gitignore)
+
+> git status
