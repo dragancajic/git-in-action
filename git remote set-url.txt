@@ -1,0 +1,45 @@
+1:48 PM May 13, 2021
+
+
+~ How to Change a Git Remote's URL | Linuxize
+https://linuxize.com/post/how-to-change-git-remote-url/
+
+# list existing remotes and see their names and URLs
+> git remote -v
+
+# git remote set-url <remote-name> <remote-url>
+> git remote set-url origin https://github.com/dragancajic/cargo-tracker.git
+
+# list remote connections to verify change(s) of URL(s)
+> git remote -v
+
+# or just change remote's URL in the .git/config file
+# notepad++ <link-to-project>\<project-name>\.git\config
+> notepad++ .\cargotracker\.git\config
+
+That's ALL!
+
+Managing remote repositories - GitHub Docs
+https://docs.github.com/en/github/getting-started-with-github/managing-remote-repositories
+
+Caching your GitHub credentials in Git - GitHub Docs
+https://docs.github.com/en/github/getting-started-with-github/caching-your-github-credentials-in-git
+
+Why is Git always asking for my password?
+https://docs.github.com/en/github/getting-started-with-github/why-is-git-always-asking-for-my-password
+
+~-~-~-~ :-)
+
+e.g.
+
+.\cargotracker>git remote -v
+origin  https://github.com/dragancajic/cargotracker.git (fetch)
+origin  https://github.com/dragancajic/cargotracker.git (push)
+
+.\cargotracker>git remote set-url origin https://github.com/dragancajic/cargo-tracker.git
+
+.\cargotracker>git remote -v
+origin  https://github.com/dragancajic/cargo-tracker.git (fetch)
+origin  https://github.com/dragancajic/cargo-tracker.git (push)
+
+.\cargotracker>_

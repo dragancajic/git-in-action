@@ -1,0 +1,63 @@
+5:52 PM May 13, 2021
+
+
+~ Changing the default branch - GitHub Docs
+https://docs.github.com/en/github/administering-a-repository/changing-the-default-branch
+
+~ Easily rename your Git default branch from master to main - Scott Hanselman's Blog
+https://www.hanselman.com/blog/easily-rename-your-git-default-branch-from-master-to-main
+
+~ How to change git default branch from master - Git Better
+https://gitbetter.substack.com/p/how-to-change-git-default-branch
+
+~ How to Get Started with GIT and work with GIT Remote Repo
+https://www3.ntu.edu.sg/home/ehchua/programming/howto/Git_HowTo.html
+
+• Git - Remote Branches
+https://git-scm.com/book/id/v2/Git-Branching-Remote-Branches
+
+• Git - Book
+https://git-scm.com/book/en/v2
+https://github.com/progit/progit2/releases/download/2.1.303/progit.pdf
+
+Git --distributed-even-if-your-workflow-isnt
+Git --fast-version-control
+Git --distributed-is-the-new-centralized
+Git --local-branching-on-the-cheap
+Git --everything-is-local
+
+
+# see remote
+> git remote show origin
+
+# see what tracking branches you have set up
+> git branch -vv
+
+
+# ~-~-~-~-~#
+# Branches #
+# ~-~-~-~-~#
+
+# Switch to another default/"base" branch
+https://github.com/dragancajic/cargo-tracker/settings/branches
+
+# • Default branch
+# The default branch is considered the “base” branch in your repository, against which all pull requests
+# and code commits are automatically made, unless you specify a different branch.
+
+master -> Rename branch | Switch to another branch
+
+# • Branch protection rules
+# Define branch protection rules to disable force pushing, prevent branches from being deleted,
+# and optionally require status checks before merging. New to branch protection rules?
+Learn more. -> https://docs.github.com/articles/defining-the-mergeability-of-pull-requests/
+
+~-~-~-~ :-)
+
+~ Caching your GitHub credentials in Git - GitHub Docs
+https://docs.github.com/en/github/getting-started-with-github/caching-your-github-credentials-in-git
+
+$ git config --global credential.helper wincred
+
+~ Why is Git always asking for my password? - GitHub Docs
+https://docs.github.com/en/github/getting-started-with-github/why-is-git-always-asking-for-my-password
