@@ -1,0 +1,39 @@
+12:20 AM Thursday, February 10, 2022
+
+
+$ git push --force origin +main
+# or depending on the branch name
+$ git push --force origin +master
+
+-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-
+
+[dragancajic@fedora pascal]$ git status
+On branch main
+Your branch and 'origin/main' have diverged,
+and have 1 and 1 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+nothing to commit, working tree clean
+[dragancajic@fedora pascal]$ git push --force origin +master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/dragancajic/pascal.git'
+[dragancajic@fedora pascal]$ git push --force origin +main
+Username for 'https://github.com': dragancajic
+Password for 'https://dragancajic@github.com': 
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.07 KiB | 1.07 MiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/dragancajic/pascal.git
+ + 375cd7c...2cb2ca2 main -> main (forced update)
+[dragancajic@fedora pascal]$ git log -1
+commit 2cb2ca2c66af4b6f68df2197362f7dbfba99a8d4 (HEAD -> main, origin/main, origin/HEAD)
+Author: Dragan Cajic <cajic_dragan@yahoo.com>
+Date:   Wed Feb 9 23:59:58 2022 +0100
+
+    ~ find arithmetic mean of elements of array
+[dragancajic@fedora pascal]$ exit
+
