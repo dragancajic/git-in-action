@@ -1,0 +1,78 @@
+5:50 PM September 28, 2021
+
+
+~-~-~-~-~-~-~-~-~-~-~-
+~ keyboard shortcuts ~
+~-~-~-~-~-~-~-~-~-~-~-
+
+Nano editor
+~-~-~-~-~-~
+
+Ctrl + O | Write Out and Enter to save
+Ctrl + X | Exit to leave the editor
+
+
+Vi(m) editor
+~-~-~-~-~-~-
+
+• Command mode (:w saves your file and :q allows you to exit Vim)
+• Insert mode (i key)
+
+
+~ Vim commands
+
+1. Basic Vim commands
+
+The most simple commands allow you to open and close documents as well as saving them. As with most other
+text editors, there are protections in place to help you avoid exiting the editor without having saved what
+you're working on.
+
+:help [keyword] - Performs a search of help documentation for whatever keyword you enter
+:e [file] - Opens a file, where [file] is the name of the file you want opened
+:w - Saves the file you are working on
+:w [filename] - Allows you to save your file with the name you've defined
+:wq - Save your file and close Vim | or :x! + Enter
+:x  - is a shortcut for :wq in Vim
+:q! - Quit without first saving the file you were working on
+
+
+3. Vim commands for editing
+
+Those who use Vim tend to use the term "yank" where most people would use the terms copy and paste.
+Therefore, the command for copying a word is yw, which stands for yank word, and the command for
+pasting whatever has been copied is p, meaning put.
+If you look up additional commands in the future, it can be confusing if you don't know what yank
+and put mean when using Vim.
+
+yy - Copies a line
+yw - Copies a word
+y$ - Copies from where your cursor is to the end of a line
+v - Highlight one character at a time using arrow buttons or the h, k, j, l buttons
+V - Highlights one line, and movement keys can allow you to highlight additional lines
+p - Paste whatever has been copied to the unnamed register
+d - Deletes highlighted text
+dd - Deletes a line of text
+dw - Deletes a word
+D - Deletes everything from where your cursor is to the end of the line
+d0 - Deletes everything from where your cursor is to the beginning of the line
+dgg - Deletes everything from where your cursor is to the beginning of the file
+dG - Deletes everything from where your cursor is to the end of the file
+x - Deletes a single character
+u - Undo the last operation; u# allows you to undo multiple actions
+Ctrl + r - Redo the last undo
+. - Repeats the last action
+
+
+~ Simple Vim workflow example
+
+If you haven't had a chance to play around with Vim much yet, you might be wondering what a simple workflow
+looks like when using it. It's relatively simple:
+
+1 Open a new or existing file with vim filename.
+2 Type i to switch into insert mode so that you can start editing the file.
+3 Enter or modify the text with your file.
+4 Once you're done, press the escape key Esc to get out of insert mode and back to command mode.
+5 Type :wq to save and exit your file. <-- { :x is a shortcut for :wq in Vim }
+
+Of course, there is so much more you can do with Vim, however as a beginner, the above steps are what a simple
+Vim workflow looks like.
