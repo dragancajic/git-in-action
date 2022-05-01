@@ -1,0 +1,67 @@
+# 3:30 PM April 9, 2021
+
+
+##~ create, switch to and push newly created feature branch to remote
+
+# create new branch
+F:\Devs\github\java-programming>git branch 2-1--problems-and-patterns
+
+# list branches
+F:\Devs\github\java-programming>git branch
+  1-6--conditional-statements
+  2-1--problems-and-patterns
+* master
+
+# switch to newly creted branch
+F:\Devs\github\java-programming>git checkout 2-1--problems-and-patterns
+Switched to branch '2-1--problems-and-patterns'
+M       data/part-2/1-problems-and-patterns.md
+
+# list branches
+F:\Devs\github\java-programming>git branch --list
+  1-6--conditional-statements
+* 2-1--problems-and-patterns
+  master
+
+# add and commit changes to feature branch
+F:\Devs\github\java-programming>git add data/part-2/1-problems-and-patterns.md
+
+F:\Devs\github\java-programming>git commit -m "add comment in english from finnish"
+
+F:\Devs\github\java-programming>git status
+On branch 2-1--problems-and-patterns
+nothing to commit, working tree clean
+
+# try to push to remote feature branch (not yet created!)
+F:\Devs\github\java-programming>git push
+fatal: The current branch 2-1--problems-and-patterns has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin 2-1--problems-and-patterns
+
+
+# Push the branch to GitHub:
+# git push --set-upstream origin <BRANCH-NAME>
+> git push --set-upstream origin my-slide
+
+## set and push to new remote feature branch from origin
+F:\Devs\github\java-programming>git push --set-upstream origin 2-1--problems-and-patterns
+fatal: HttpRequestException encountered.
+   An error occurred while sending the request.
+Username for 'https://github.com': dragancajic
+Password for 'https://dragancajic@github.com':
+Counting objects: 5, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 458 bytes | 458.00 KiB/s, done.
+Total 5 (delta 4), reused 0 (delta 0)
+remote: Resolving deltas: 100% (4/4), completed with 4 local objects.
+remote:
+remote: Create a pull request for '2-1--problems-and-patterns' on GitHub by visiting:
+remote:      https://github.com/dragancajic/java-programming/pull/new/2-1--problems-and-patterns
+remote:
+To https://github.com/dragancajic/java-programming.git
+ * [new branch]      2-1--problems-and-patterns -> 2-1--problems-and-patterns
+Branch 2-1--problems-and-patterns set up to track remote branch 2-1--problems-and-patterns from origin.
+
+F:\Devs\github\java-programming>_
