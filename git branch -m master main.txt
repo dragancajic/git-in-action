@@ -1,0 +1,50 @@
+7:40 PM Monday, March 13, 2023
+
+
+~ How to rename the "master" branch to "main" in Git | Learn Version Control with Git
+https://www.git-tower.com/learn/git/faq/git-rename-master-to-main
+
+~- ~- ~- ~- ~- ~- ~- ~- ~- ~- ~- ~- ~- ~- ~- ~- ~- ~- ~- ~- ~- ~-
+
+[dragancajic@fedora SquareRootFinder]$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.gitignore
+	.idea/
+	babylonian.py
+	helper_functions.py
+	main.py
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+# rename the "master" branch in your local Git repository to "main"
+[dragancajic@fedora SquareRootFinder]$ git branch -m master main
+
+[dragancajic@fedora SquareRootFinder]$ git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.gitignore
+	.idea/
+	babylonian.py
+	helper_functions.py
+	main.py
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+# add a (new) remote repository explicitly
+[dragancajic@fedora SquareRootFinder]$ git remote add origin https://github.com/dragancajic/SquareRootFinder.git
+
+# list existing remotes and see their names and URLs
+[dragancajic@fedora SquareRootFinder]$ git remote -vv
+origin	https://github.com/dragancajic/SquareRootFinder.git (fetch)
+origin	https://github.com/dragancajic/SquareRootFinder.git (push)
+
+[dragancajic@fedora SquareRootFinder]$ git add .
