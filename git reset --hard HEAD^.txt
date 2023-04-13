@@ -1,0 +1,37 @@
+# 11:52 AM Sunday, April 09, 2023
+
+
+# to remove the last commit from git ----> git reset --hard HEAD^
+# to remove the last two(2) commits -----> git reset --hard HEAD~2
+
+[dragancajic@fedora UdacityDSANanodegree]$ git reset --hard HEAD~2
+HEAD is now at 80eacd9 Arrays and Linked Lists: Strings
+
+[dragancajic@fedora UdacityDSANanodegree]$ git log
+commit 80eacd93c8c47a61c367a4af2abb334ce63b3384 (HEAD -> main)
+Author: Dragan Cajic <cajic_dragan@yahoo.com>
+Date:   Thu Apr 13 16:03:02 2023 +0200
+
+    Arrays and Linked Lists: Strings
+
+commit 55f360e7bccb50b76c00a86a6843ccd345ebec11 (origin/main)
+# ...
+
+[dragancajic@fedora UdacityDSANanodegree]$ git commit --amend
+[main 409aeaa] Arrays and Linked Lists: `Strings`
+ Date: Thu Apr 13 16:03:02 2023 +0200
+ 4 files changed, 650 insertions(+)
+ create mode 100755 2_DataStructures/2_ArraysAndLinkedLists/02-05_string-exercises.ipynb
+ create mode 100644 2_DataStructures/2_ArraysAndLinkedLists/02-05a_string-methods.py
+ create mode 100644 2_DataStructures/2_ArraysAndLinkedLists/02-05e1_reverse-strings.py
+ create mode 100644 2_DataStructures/2_ArraysAndLinkedLists/02-05e2_anagrams.py
+
+[dragancajic@fedora UdacityDSANanodegree]$ git log
+commit 409aeaad02e8ffbd026155aab460dce7475b1ace (HEAD -> main)
+Author: Dragan Cajic <cajic_dragan@yahoo.com>
+Date:   Thu Apr 13 16:03:02 2023 +0200
+
+    Arrays and Linked Lists: `Strings`
+
+commit 55f360e7bccb50b76c00a86a6843ccd345ebec11 (origin/main)
+# ...
