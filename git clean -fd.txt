@@ -1,0 +1,16 @@
+Ned 05 Feb 2023 20:36:30
+
+
+~ git discard changes the RIGHT way, let's FIX it! | GoLinuxCloud
+https://www.golinuxcloud.com/git-discard-changes/
+
+# discard both untracked files and folders
+$ git clean -fd
+
+--- ~~~ --- ~~~ --- ~~~ --- ~~~ --- ~~~ --- ~~~ --- ~~~ --- ~~~ -
+
+https://www.baeldung.com/git-discard-unstaged-changes
+https://stackoverflow.com/questions/1090309/git-undo-all-working-dir-changes-including-new-files
+https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/remove-revert-discard-local-uncommitted-changes-Git-how-to
+
+https://www.google.com/search?q=how+to+discard+all+changes+in+git+from+working+directory
