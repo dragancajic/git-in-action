@@ -1,0 +1,34 @@
+Tue 17 Oct 2023 05:08:05 PM CEST
+
+
+python-programmer> git push --set-upstream origin intermediate
+
+# ERROR made by wrong command typing :-( :warning:
+python-programmer> git commit -ammend
+[intermediate 62c7f68] mend
+
+# So to solve this problem? :thinking:
+# I have one (1) unwanted commit locally [made by my mistake!] and commit on remote to
+# which I want to add some additional text that I forgot to complete in commit message.
+
+# -~-~-~-~-~-~-~-~-~-
+# ~ S O L U T I O N ~
+# -~-~-~-~-~-~-~-~-~-
+
+# Undo last commit, put changes into staging <-- LOOK! :eyes:
+python-programmer> git reset --soft HEAD^
+
+python-programmer> git commit --amend
+[intermediate 626940e] ~ `Data Types` in `Python`: Chapter 1 | Fundamental `Sequence Data Types`
+
+# L O O K !!! :eyes:
+python-programmer> git push --force origin +intermediate
++ 8893182...626940e intermediate -> intermediate (forced update)
+
+python-programmer> git status
+On branch intermediate
+Your branch is up to date with 'origin/intermediate'.  # OK! √
+
+# B O N U S  --->  git reset --hard HEAD^.txt
+# to remove the last commit from git ----> git reset --hard HEAD^
+# to remove the last two(2) commits -----> git reset --hard HEAD~2
