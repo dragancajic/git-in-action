@@ -1,0 +1,45 @@
+Uto 25 Jun 2024 18:05:12 CEST
+
+
+~ A practical guide to using the git stash command | Opensource.com
+https://opensource.com/article/21/4/git-stash
+
+# 1) create a stash
+$ git stash
+# or better option is
+# add a description to the stash
+$ git stash save <description>
+
+# e.g.
+dragancajic@ubuntu:~/Devs/matfbg/UVIT$ git stash save "opste informacije"
+Saved working directory and index state On opste-informacije: opste informacije
+
+# 2) list your stashes
+$ git stash list
+
+# e.g.
+dragancajic@ubuntu:~/Devs/matfbg/UVIT$ git stash list
+stash@{0}: On opste-informacije: opste informacije
+
+# 3) retrieve stashed changes
+$ git stash pop stash@{stash_id}
+# or
+$ git stash apply stash@{stash_id}
+
+# e.g.
+dragancajic@ubuntu:~/Devs/matfbg/UVIT$ git pop stash@{0}
+
+# 4) clean up the stash
+$ git stash clear
+$ git stash drop <stash_id>
+
+# 5) check stash diffs - view the diff of a stash
+$ git stash show <stash_id>
+
+# to get a more detailed diff, pass the --patch or -p flag
+$ git stash show stash@{stash_id} --patch
+
+~-~-~-
+
+dragancajic@ubuntu:~/Devs/matfbg/UVIT$ date
+Uto 25 Jun 2024 18:05:12 CEST
