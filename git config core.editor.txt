@@ -1,0 +1,53 @@
+# Mon 11:13 PM December 9, 2024
+
+
+› Configure Git to use `nano` editor instead of `vim` √ O.K.
+
+C:\Users\Milica B>git config --global core.editor "nano"
+
+C:\Users\Milica B>git config --list
+core.symlinks=false
+core.autocrlf=false
+core.fscache=true
+color.interactive=true
+color.ui=auto
+help.format=html
+diff.astextplain.textconv=astextplain
+rebase.autosquash=true
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+credential.helper=!"C:/PortableGit/mingw64/bin/git-credential-manager.exe"
+user.name=Драган Ћајић
+user.email=cajic_dragan@yahoo.com
+user.username=dragancajic
+core.autocrlf=false
+core.excludesfile=C:\Users\Milica B\Documents\gitignore_global.txt
+core.editor=nano
+color.ui=true
+gui.recentrepo=F:/Devs/freeCodeCamp
+credential.helperselector.selected=manager
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+safe.directory=E:/home/Devs/matfbg/p1
+
+C:\Users\Milica B>nano --version
+ GNU nano, version 7.2
+ (C) 2023 the Free Software Foundation and various contributors
+ Compiled options: --enable-utf8
+
+C:\Users\Milica B>which nano
+/usr/bin/nano
+
+C:\Users\Milica B>vim --verison
+VIM - Vi IMproved 9.1 (2024 Jan 02, compiled Jan 04 2024 08:28:51)
+Unknown option argument: "--verison"
+More info with: "vim -h"
+
+C:\Users\Milica B>git --version
+git version 2.44.0.windows.1
+
+C:\Users\Milica B>clear
